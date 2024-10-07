@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Præsentation af wokrshoppen Det poetiske internet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    <style>
+        body,
+        h1,
+        h2 {
+            margin: 0;
+        }
+
+        body {
+            background-color: darkgreen;
+        }
+
+        header {
+            width: 100%;
+            height: 10vh;
+            background-color: chartreuse;
+        }
+
+        .header {
+            padding: 20px;
+            text-transform: uppercase;
+            overflow: hidden;
+        }
+
+        #scroll-text {
+            /* animation properties */
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+
+            -moz-animation: my-animation 30s linear infinite;
+            -webkit-animation: my-animation 30s linear infinite;
+            animation: my-animation 30s linear infinite;
+        }
+
+
+        @keyframes my-animation {
+            from {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+
+            to {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
+
+
+        .container1 {
+            display: grid;
+            grid-template-rows: 1;
+            grid-template-columns: 1fr 1fr;
+            background-color: whitesmoke;
+        }
+
+        .container2 {
+            display: grid;
+            grid-template-rows: 1;
+            grid-template-columns: 1fr 1fr;
+            background-color: cornflowerblue;
+        }
+
+        .container3 {
+            display: grid;
+            grid-template-rows: 1;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .a1 {
+
+            padding: 20px;
+        }
+
+        .a2 {
+            background-color: bisque;
+            height: 100vh;
+            overflow: scroll;
+        }
+
+        .b2 {
+            background-color: coral;
+            height: 100vh;
+            overflow: scroll;
+
+        }
+
+        .lister {
+            padding: 75px;
+        }
+
+        h1 {
+            font-size: 50pt;
+            font-family: "Jacquard 12", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        li,
+        p {
+            font-size: 14pt;
+        }
+        
+        span {
+            font-size: 25pt;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h2 id="scroll-text"><span>&#9760;</span> &nbsp; Det poetiske internet &nbsp; &nbsp; <span>&#10048;</span> &nbsp; &nbsp; Det poetiske internet &nbsp;<span>&#9775;</span></h2>
+        </div>
+    </header>
+    <section class="container1">
+        <div class="a1">
+            <p>Internettet og internetteknologi er i dag en essentiel del af vores hverdag, vores samfund og institutioner og det indgår som en del af alle mulige former teknologier.</p>
+
+            <p>Men det er også i dag et sted som er præget af stor monopolisering af de store amerikanske tech virksomheder og deres kommercielle intensioner.</p>
+
+            <p>På dette kursus skal vi lære selv at håndtere internettet ved at lære at skrive <mark>HTML</mark>, <mark>CSS</mark> og <mark>JavaScript</mark> kode.</p>
+
+            <p>Vi skal lære om og diskutere hvad internettet er for et <mark>socio-materielt</mark>, <mark>teknisk</mark> og ikke mindst <mark>poetisk</mark> sted og vi skal snakke om hvad det vil sige at publicere på internettet og så skal vi selv udgive noget indhold: <mark>kode</mark>, <mark>designe</mark> og <mark>producere indhold</mark> til en <mark>hjemmeside</mark>.</p>
+        </div>
+    </section>
+    <section class="container2">
+        <div class="header">
+            <h2>A & B liste</h2>
+        </div>
+    </section>
+    <section class="container3">
+        <div class="a2">
+            <div class="lister">
+                <h1>A</h1>
+                <ul>
+                    <li>Kommercielt</li>
+                    <li>Best practice / følger templates</li>
+                    <li>SEO optimeret</li>
+                    <li>Brugerdrevet</li>
+                    <li>CMS baseret</li>
+                    <ul class="collapsible">
+                        <div class="content">
+                            <li><a href="https://da.wix.com/" target="_blank">CMS 1</a></li>
+                            <li><a href="https://www.squarespace.com" target="_blank">CMS 2</a></li>
+                            <li><a href="https://wordpress.com/" target="_blank">CMS 3</a></li>
+                        </div>
+                    </ul>
+                    <li>Ligger på en eller anden server </li>
+                    <li>Tung</li>
+                    <li>Peger på sig selv</li>
+                    <li>Brugervenlig</li>
+                </ul>
+            </div>
+        </div>
+        <div class="b2">
+            <div class="lister">
+                <h1>B</h1>
+                <ul>
+                    <li><a href="https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/" target="_blank">Personligt</a></li>
+                    <li><a href="https://mirroringplaces.online/" target="_blank">Kreativt / skaber interfaces</a></li>
+                    <li>Ikke kommecielt</li>
+                    <li><a href="http://luckysoap.com/statements/handmadeweb.html" target="_blank">Håndkodet</a></li>
+                    <li><a href="https://diagram.website/" target="_blank">Skaber infrastruktur</a></li>
+                    <li><a href="https://data.coop/" target="_blank">Ligger på en bestemt (soldreven) server</a></li>
+                    <li><a href="https://solar.lowtechmagazine.com/" target="_blank">Let</a></li>
+                    <li><a href="https://urlpoetry.club/" target="_blank">Peger ud fra sig selv</a></li>
+                    <li>Langsomt</li>
+                    <li><a href="http://internet-atlas.net/" target="_blank">Smukt</a></li>
+                    <li>Grimt(?)</li>
+                    <li><a href="https://onemillioncheckboxes.com/?utm_source=substack&utm_medium=email" target="_blank">Humoristisk</a></li>
+                    <li><a href="https://cyberfeminismindex.com/" target="_blank">Aktivistisk</a></li>
+                    <li>Anti-brugervenlig</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
